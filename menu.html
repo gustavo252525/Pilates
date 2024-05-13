@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Registro de Entrada e Saída de Funcionários</title>
+    <!-- Incluindo o Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="resgistro.html">Cadastro</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li class="align-right"><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <h1>Registro de Entrada e Saída de Funcionários</h1>
+    
+    <div>
+        <label for="nome">Nome do Funcionário:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do funcionário">
+        <button onclick="registrar('entrada')">Registrar Entrada</button>   
+        <button onclick="registrar('saida')">Registrar Saída</button>
+    </div>
+    
+    <div id="registro">
+        <h2>Registro de Atividades</h2>
+        <ul id="atividades">
+        </ul>
+    </div>
+    
+    <!-- Espaço para o gráfico de entradas e saídas por funcionário -->
+    <div>
+        <canvas id="entradasSaidasPorFuncionario" width="1000" height="180"></canvas>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="menu.js"></script>
+
+</body>
+</html>

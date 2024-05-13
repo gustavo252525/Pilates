@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+} 
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: calc(100% - 120px);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004380;
+}
+
+#registro {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#registro button {
+    flex-basis: 45%;
+}
+
+#log {
+    margin-top: 20px;
+}
+
+#atividades {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#atividades li {
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+    transition: transform 0.3s;
+}
+
+#atividades li:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="servicos.css">
+<title>Registro de Pagamento - Academia de Pilates</title>
+</head>
+<body>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="resgistro.html">Cadastro</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li class="align-right"><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Registro de Pagamento - Academia de Pilates</h1>
+        <form id="paymentForm">
+            <label for="rg">RG do Cliente:</label>
+            <input type="text" id="rg" name="rg" required>
+            <div class="error-message" id="rgError">Por favor, insira o RG do cliente.</div>
+            <label for="valor">Valor do Pagamento (R$):</label>
+            <input type="number" id="valor" name="valor" step="0.01" min="0" required>
+            <div class="error-message" id="valorError">Por favor, insira um valor válido.</div>
+            <label for="data">Data do Pagamento:</label>
+            <input type="date" id="data" name="data" required>
+            <div class="error-message" id="dataError">Por favor, insira uma data válida.</div>
+            <input type="submit" value="Registrar Pagamento">
+        </form>
+
+        <!-- Campo de consulta -->
+        <div class="consulta-container">
+            <h2>Consulta de Pagamento</h2>
+            <label for="consultaRg">Consultar Pagamento por RG:</label>
+            <input type="text" id="consultaRg" name="consultaRg">
+            <button id="consultarBtn">Consultar</button> <!-- Adicionei um ID ao botão -->
+            <div class="consulta-message" id="consultaMessage"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Vinculando o arquivo JavaScript -->
+    <script src="servicos.js"></script>
+    
+</body>
+</html>

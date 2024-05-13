@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="contatos.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="resgistro.html">Cadastro</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li class="align-right"><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="legenda">
+        <h1>Entre em Contato Conosco</h1>
+        <h2>Informações de Contato</h2>
+        <p><strong>Endereço:</strong> Rua Principal, 123 - Bairro Centro, Cidade, Estado</p>
+        <p><strong>Telefone:</strong> (00) 1234-5678</p>
+        <p><strong>Email:</strong> exemplo@email.com</p>
+    </div>
+    <div class="info">
+        <h2>Envie uma mensagem</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="popup" class="popup">
+        Mensagem enviada com sucesso! Aguarde o retorno.
+    </div>
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+    <script src="contatos.js"></script>
+</body>
+</html>
